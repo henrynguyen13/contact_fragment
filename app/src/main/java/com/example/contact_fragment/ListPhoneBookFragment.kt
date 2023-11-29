@@ -33,9 +33,9 @@ class ListPhoneBookFragment: Fragment() {
             userList.add(
                 User(
                     it,
-                    "Manh",
-                    "0123456789",
-                    "manh@gmail.com"
+                    "Khoa",
+                    "0978014692",
+                    "khoa@gmail.com"
                 )
             )
         }
@@ -43,9 +43,9 @@ class ListPhoneBookFragment: Fragment() {
             userList.add(
                 User(
                     it,
-                    "Nguyen Van",
-                    "9876543210",
-                    "nv@gmail.com"
+                    "Nguyen Dang Khoa",
+                    "0978014692",
+                    "khoahenry@gmail.com"
                 )
             )
         }

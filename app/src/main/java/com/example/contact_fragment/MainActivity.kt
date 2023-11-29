@@ -15,13 +15,7 @@ class MainActivity : AppCompatActivity(), AddUserFragment.AddUserListener, ListP
 
     private lateinit var listPhoneBookFragment: ListPhoneBookFragment
     private lateinit var addUserFragment: AddUserFragment
-    override fun showOptionsMenu(show: Boolean) {
-        if (show) {
-            supportActionBar?.show()
-        } else {
-            supportActionBar?.hide()
-        }
-    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,11 +31,6 @@ class MainActivity : AppCompatActivity(), AddUserFragment.AddUserListener, ListP
     override fun addUser(user: User) {
         listPhoneBookFragment.addUser(user)
     }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.option_menu, menu)
-        return true
-    }
-
 
     override fun navigateToAddUser() {
 
